@@ -1,0 +1,824 @@
+/* ----------------------------共通設定--------------------- */
+body{
+  background:rgb(14, 23, 33);
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+:root {
+  --swiper-theme-color:  rgb(255, 201, 137)!important;
+  --swiper-navigation-size: 27px !important;
+}
+
+.container{
+  width: 100%;
+  background: rgb(14, 23, 33);
+  z-index: 2;
+  /* padding: 0px 10px 0px; */
+  /* margin: 0px 10px 60px; */
+  margin: 0px 0px 60px;
+  /* padding: 用在每隔裡面; */
+}
+
+
+
+p{
+  font-size: 17.5px;
+  line-height: 20px;
+  margin-bottom: 40px;  
+  color: #d0d7df
+}
+
+ul{
+  display: flex;
+  
+}
+
+li{
+  list-style: none;
+  margin: 1rem;
+  font-size: 8px;
+  height: 10px;
+  
+}
+li a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+button{
+  background: rgba(245, 222, 179, 0);
+  border: 2px solid rgb(255, 201, 137);
+  color:  rgb(255, 201, 137);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+button:hover{
+  background-color:rgb(255, 201, 137); 
+  border: 2px solid rgb(255, 201, 137);
+  color: black;
+}
+
+
+img{
+width: 100%;
+}
+
+.flex{
+  display: flex;
+}
+
+
+/*-------------------------------------------------*/
+/*-----------------------------特例區-----------------------*/
+/*-------------------------------------------------*/
+
+
+#EXQUISITE-MENU p{
+  text-align: center;
+}
+
+
+/*-------------------------------------------------*/
+/*---------------------------導覽列id="navbar"--------------------*/
+/*-------------------------------------------------*/
+
+
+#navbar{
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  background: rgb(14, 23, 33);
+  z-index: 1000;
+}
+
+#navbar .container{
+  margin: 0;
+}
+
+
+.navbar-box{
+  /* height: 65px; */
+  
+  display: flex;
+  background: rgb(14, 23, 33);
+  justify-content: space-between;
+  align-items: center;
+  /* top: 0; */
+}
+
+.navbar-box>div {
+  margin: 5px;
+}
+
+#navbar img{
+  width: 150px;
+  height: 40px;
+}
+
+.navbar-right{
+  display: flex;
+  align-items: center;
+}
+
+
+#navbar li{
+  display: none;
+}
+
+
+li a:hover{
+  color: rgb(255, 201, 137);
+  text-decoration: overline;
+}
+
+#navbar button{
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-right-li1{
+  text-decoration: overline;
+  color: rgb(255, 201, 137);;
+  
+}
+
+#navbar .btn-BookNow{
+  margin: 1rem;
+  width: 140px;
+  height: 50px;
+  display: none;
+  
+}
+
+/* input{
+  display: none;
+} */
+
+
+
+/*-------------------------------------------------*/
+/*-----------------------影片區 id="video"------------------------*/
+/*-------------------------------------------------*/
+
+
+
+#video{
+  /* pointer-events: none; */
+  /* z-index: -1; */
+  position: relative;
+  height: 100vh;
+  margin-bottom: 50px;
+  /* margin: auto; */
+  
+}
+#video .container{
+  padding: 0;
+}
+/* .video-box{
+  
+  width: 100%;
+  margin: auto;
+  
+} */
+
+#video video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  /* z-index: -1; */
+  
+  /* filter: hue-rotate(90deg); */
+}
+
+.video-baground{
+  width: 100%;
+  height: 100%;
+  background: #657a9b60;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left:50% ;
+  transform: translate(-50% , -50% );
+}
+.video-text {
+  /* text-transform: uppercase; */
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left:50% ;
+  transform: translate(-50% , -50% );
+  /* width: 1000px;
+  height: 1000px; */
+  /* background: #657a9bb2; */
+  z-index: 2;
+  text-align: center;
+  /* pointer-events: none; */
+}
+
+.video-small-title{
+  color: white;
+  margin-bottom: 5px;
+}
+
+.video-title{
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.video-text button{
+  color: white;
+  border: white 1px solid;
+  width: 140px;
+  height: 50px;
+}
+#video button:hover{
+  background-color:rgb(255, 255, 255); 
+  border: 2px solid rgb(255, 255, 255);
+  color: black;
+}
+
+
+/*-------------------------------------------------*/
+/*----------------------章節大標題id="A-UNIQUE-LOCATION"----------*/
+/*-------------------------------------------------*/
+
+
+.small-main-title-flexbox{
+  display: flex;
+  justify-content: center;
+}
+.small-main-title{
+  color:  rgb(255, 201, 137);
+  text-align: center;
+  /* text-decoration: underline; */
+  border-bottom: 1px  rgb(255, 201, 137) solid;
+    display:inline-block;
+  padding: 5px;
+  font-size: 15px;  
+  margin-bottom: 20px;
+
+}
+
+.main-title{
+color: white;
+text-align: center;
+font-size: 30px;
+margin-bottom: 60px;
+}
+
+
+/*-------------------------------------------------*/
+/*--------------------內文1id="A-UNIQUE-LOCATION"--------------*/
+/*-------------------------------------------------*/
+
+
+.years{
+  color:  rgb(255, 201, 137);
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.p-title{
+  font-size: 30px;
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!! */
+.section-menu{
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+justify-content: center;
+}
+.section-menu label{
+margin:  0px 15px 20px;
+}
+
+.hover-img-flex{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+#section-menu ul{
+
+  text-align: center;
+
+  justify-content: center;
+}
+
+
+.section-menu-box{
+  text-align: center;
+}
+.section-menu-bottom{
+  margin-bottom: 20px;
+}
+
+
+.section-menu-box label{
+  margin:  12px;
+  font-size: 12px;
+  color: #d0d7df
+}
+
+.section-menu-box label:hover{
+  color: rgb(255, 201, 137);
+  text-decoration: overline;
+
+}
+
+/* .STARTERS .left,
+.STARTERS .right
+{
+  width: 40%;
+
+  margin:0 10px;
+} */
+
+.text-flex{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+.left > div,
+.right > div
+{
+    justify-content: space-between;
+    height: 60px;
+  background: rgb(94, 156, 243);
+
+}
+
+
+.pictur{
+  height: 60px;
+}
+
+#section-menu .left-picture-text{
+  height: 40px;
+  margin: 0;
+}
+
+#section-menu p{
+  margin: 0;
+}
+
+.radio-text img{
+  width: auto;
+  height: 100%;
+}
+
+.section-menu-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-menu-pictur{
+  width: auto;
+  height: 60px;text-align: left;
+}
+
+.section-menu-pictur img{
+  height: 100%;
+}
+
+.radio-text-flex{
+  display: flex;
+  /* background-color: aqua; */
+  height: 60px;width: 100%;
+  margin: 20px;
+
+}
+
+
+#STARTERS:checked~.STARTERS-open{
+  display: block;
+}
+#MAIN-COURSES:checked~.MAIN-COURSES-open{
+  display: block;
+}
+#DESSERTS:checked~.DESSERTS-open{
+  display: block;
+}
+#WINES:checked~.WINES-open{
+  display: block;
+}
+
+
+#section-menu img{
+  border-radius: 99px;
+  margin-right: 20px;
+}
+
+.name{
+  line-height: 30px;
+  margin-left: 20px;
+}
+
+.price{
+  color: rgb(255, 201, 137);
+}
+
+
+.RESERVATION-background{
+  background: url('https://matchthemes.com/demowp/latulipe/wp-content/uploads/blog-2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:  240px;
+  position: relative;
+}
+
+.RESERVATION-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  z-index: 2;
+}
+
+
+
+.Laura-Jones-right img{
+  border-radius: 99em 99em 0em 0em;
+/* width: 50%; */
+  /* width:80% */
+}
+
+
+.flex-4 {
+  /* height: 400px; */
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #222F3D;
+  background-image: url(https://matchthemes.com/demowp/latulipe/wp-content/uploads/page-bkg2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box2 {
+  display: table;
+  width: 45%;
+}
+
+.box03 {
+  font-size: 35px;
+  font-weight: 500;
+  color: rgb(255, 201, 137);
+  /* border: 2px solid springgreen; */
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+
+
+
+}
+
+.box2>.box3 {
+  letter-spacing: 4px;
+}
+
+
+#end{
+  text-align: center;
+}
+
+
+
+@media(min-width:576px){
+  #navbar .btn-BookNow{
+    display: block;
+  }
+  .hover-img-flex img{
+    width: 50%;
+  }
+.radio-text-flex{width: 40%;}
+
+
+.Laura-Jones-flex{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Laura-Jones-left-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.EDUCATION{
+  width: 50%;
+}
+.AWARDS{
+  width: 50%
+
+}
+.Laura-Jones-left{
+  width: 60%;
+}
+.Laura-Jones-right {
+  width: 40%;
+  padding-left: 21px;
+}
+.box2{
+  width: 25%;
+}
+.DISCOVER-ALL-OPTIONS-FLEX{
+  display: flex;
+}
+.DISCOVER-ALL-OPTIONS-FLEX img{
+border-radius: 99em 99em 0em 0em;
+width: 80%;
+}
+.DISCOVER-ALL-OPTIONS-left{
+  width: 50%;
+  display: flex;
+  text-align: center;
+  padding: 0 10px;
+}
+.DISCOVER-ALL-OPTIONS-right{
+  width: 50%;
+}
+.hight-box{
+  width: 20px;
+  height: 50px;
+  /* background-color: aliceblue; */
+}
+.footer-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-mid{
+  text-align: center;
+  width: 200px;
+}
+.footer-right{
+  text-align: right;
+}
+#footer p{
+  line-height:0px;
+}
+.CONTACT-US-flex{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.message-flex{
+  display: flex;
+}
+.message-flex>input{
+  width: 25% !important;
+}
+#CONTACT-US img{
+  width: 80%;
+  border-radius: 99em 99em 0em 0em;
+}
+.CONTACT-US-right{
+  display: flex;
+  text-align: center;
+}
+.CONTACT-US-right{
+  width: 65%;
+}
+
+.CONTACT-US-left-p img{
+top: 10px;
+}
+#EXQUISITE-MENU p{
+ width: 80%;
+ margin: auto;
+}
+}
+
+@media(min-width:992px){
+  #navbar .btn-BookNow{
+    display: block;
+  }
+  #navbar li{
+    display: block;
+  }  
+  /*992以上時套用此設定 並無在基本設定設定過*/
+  .flex992{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-sizing: border-box;
+}
+.flex992 .LOCATION-right{
+  text-align: right;
+  width: 260px;
+  text-align: left;
+}
+
+.flex992 .LOCATION-mid{
+  margin: 0 40px ;
+  padding: 10px;
+  width: 450px;
+  height: 450px;
+}
+
+.flex992 .LOCATION-left{
+  text-align: right;
+  width: 260px;
+}
+
+
+.LOCATION-mid img{
+  border-radius: 99em 99em 0em 0em;
+}
+
+
+
+.hover-img-flex img{
+  width: 25%;
+}
+.RESERVATION-background,
+.swiper-boy
+{
+  background-attachment: fixed !important;
+}
+
+
+.RESERVATION-text{ 
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left:50% ;
+  transform: translate(-50% , -50% );
+  z-index: 2;
+  text-align: center;
+}
+.Laura-Jones-flex{
+  display: flex;
+  justify-content: flex-start;
+}
+.Laura-Jones-left{
+  width: 60%;
+}
+.Laura-Jones-right{
+  width: 25%;
+  padding-left: 60px;
+}
+
+
+.Laura-Jones-left-flex{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.EDUCATION{
+  width: 50%;
+}
+.AWARDS{
+  width: 50%
+  
+}
+.flex-4{
+  position: relative;
+}
+#EXQUISITE-MENU p{
+  width: 60%;
+  margin: auto;
+ }
+}
+
+
+/* 如果flex992 none 子曾是否也會被none調 */
+
+/* button 992才會正常觸發?
+論播圖
+背景 */
+
+
+
+
+.swiper-boy{
+  background: url('https://matchthemes.com/demowp/latulipe/wp-content/uploads/top-img-8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;  
+}
+.swiper {
+  height: 100%;
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.swiper {
+  width: 100%;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide>div {
+  width: 75%;
+  line-height: 30px;
+  font-size: 28px;
+  font-style: italic;
+  z-index: 1;
+  padding: 100px 0;
+margin: auto;
+margin-bottom: 30px;
+color: white;
+}
+
+.a{
+  font-size: 15px;
+}
+.b{
+  font-size: 5px;
+}
+
+/* .swiper-slide {
+  background-color: rgba(166, 234, 41, 0.186);
+} */
+
+/* .swiper-button-prev {
+  border-radius: 50%;
+  border: 2px solid rgb(255, 201, 137);
+  ;
+  width: 70px;
+  height: 70px;
+  color: rgb(255, 201, 137);
+
+}
+
+.swiper-button-next {
+  border-radius: 50%;
+  border: 2px solid rgb(255, 201, 137);
+  width: 70px;
+  height: 70px;
+  color: rgb(255, 201, 137);
+}  */
+
+.swiper-button-prev,
+.swiper-button-next{
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 201, 137);
+  top: 50%;
+  /* transform: translate(0% , -50%); */
+  width: 40px;
+  height: 40px;
+  color: rgb(255, 201, 137);
+}
+.swiper-button-size{
+  width: 40px;
+  height: 40px;
+}
+
+.message{
+text-align: center;
+}
+
+#CONTACT-US input,textarea{
+  margin: auto;
+  width: 90%;
+  background-color: rgba(47, 0, 255, 0);
+  border: #222f3d00;
+  border-bottom: #54595F solid 3px;
+margin-bottom: 15px;
+line-height: 1.7rem;
+color: white;
+font-size: 20px;
+padding-left: 10px;
+}
+::placeholder {
+  color:#d0d7df;
+  font-size: 18px;
+  opacity: 1; /* Firefox */
+}
