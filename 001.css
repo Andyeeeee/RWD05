@@ -401,6 +401,16 @@ margin:  0px 15px 20px;
 
 }
 
+/*------------------- 菜單選擇 ------------------*/
+
+.STARTERS-open,
+.MAIN-COURSES-open,
+.DESSERTS-open,
+.WINES-open{
+  display: none;
+}
+
+
 
 #STARTERS:checked~.STARTERS-open{
   display: block;
