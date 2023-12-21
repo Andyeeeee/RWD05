@@ -509,7 +509,26 @@ margin:  0px 15px 20px;
   text-align: center;
 }
 
+.name-menu,
+.p-title-menu,
+.p{
+  line-height: 1;
 
+}
+
+.name-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-title-menu{
+  font-size: 16px;
+}
+
+.p{
+  font-size: 10px;
+}
 
 @media(min-width:576px){
   #navbar .btn-BookNow{
@@ -613,6 +632,14 @@ top: 10px;
 }
 }
 
+.p-title-menu{
+  font-size: 16px;
+}
+
+.p{
+  font-size: 12px;
+}
+
 @media(min-width:992px){
   #navbar .btn-BookNow{
     display: block;
@@ -704,6 +731,13 @@ top: 10px;
   width: 60%;
   margin: auto;
  }
+ .p-title-menu{
+  font-size: 25px;
+}
+
+.p{
+  font-size: 13px;
+}
 }
 
 
@@ -810,6 +844,8 @@ color: white;
   width: 40px;
   height: 40px;
 }
+
+
 
 .message{
 text-align: center;
