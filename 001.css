@@ -38,7 +38,7 @@ ul{
 li{
   list-style: none;
   margin: 1rem;
-  font-size: 8px;
+  font-size: 18px;
   height: 10px;
   
 }
@@ -49,8 +49,8 @@ li a{
 }
 button{
   background: rgba(245, 222, 179, 0);
-  border: 2px solid rgb(255, 201, 137);
-  color:  rgb(255, 201, 137);
+  border: 2px solid rgb(255, 255, 255);
+  color:  rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,9 +58,9 @@ button{
 }
 
 button:hover{
-  background-color:rgb(255, 201, 137); 
+  background-color:rgba(255, 202, 137, 0); 
   border: 2px solid rgb(255, 201, 137);
-  color: black;
+ color:  rgb(255, 201, 137);
 }
 
 
@@ -154,11 +154,18 @@ li a:hover{
   display: none;
   
 }
+.form {
+  display: none;
+  background-color: chocolate;
+}
+    /* 鼠标悬停时显示表单 */
+    #optionWrapper:hover .form {
+      display: block;
+    }
 
 /* input{
   display: none;
 } */
-
 
 
 /*-------------------------------------------------*/
@@ -646,7 +653,13 @@ top: 10px;
   }
   #navbar li{
     display: block;
-  }  
+  }
+  #navbar button{
+    width: 40px;
+    height: 40px;
+    display: none;
+  }
+    
   /*992以上時套用此設定 並無在基本設定設定過*/
   .flex992{
   display: flex;

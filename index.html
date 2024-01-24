@@ -830,6 +830,21 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <script>
+    // 延展
+    // 获取元素
+    var optionWrapper = document.getElementById('optionWrapper');
+    var formA = document.getElementById('formA');
+
+    // 当鼠标进入选项区域时，显示表单
+    optionWrapper.addEventListener('mouseenter', function () {
+      formA.style.display = 'block';
+    });
+
+    // 当鼠标离开选项区域时，隐藏表单
+    optionWrapper.addEventListener('mouseleave', function () {
+      formA.style.display = 'none';
+    });
+
     var swiper = new Swiper(".mySwiper", {
       // pagination: {
       //   el: ".swiper-pagination",
